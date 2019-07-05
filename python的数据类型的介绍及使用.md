@@ -147,8 +147,65 @@ str.isspace()
 str=" "
 li="cwx is good boy"
 str.join(li)
-
+```
 结果为：'c w x   i s   g o o d   b o y'
 
+## 元组
+里面的内容不可变和字符串一样；
+创建一个元组```tuple=('name',185,4598.18,'a') ```
+输出一个元组：print(tuple)
+元组也是一个序列，所以可以对其这样输出想要的值：```tuple[1],tuple[:2],tuple[-2:]等 ```
 
+删除一个元组，只能删除整个元组，不能删除其中的元素```del tuple  ```
+
+元组的基本操作：
+```python
+tuple1=(1,2,3)
+tuple1=(4,5,6)
+
+元组的连接操作：tuple1+tuple2
+元组的复制操作：tuple1*4
+计算元祖的个数：count(tuple1)
+元素是否存在：2 in tuple1 存在返回Ture 否则False
+迭代：for x in tupel1:print(x)
+```
+
+元组的内含函数：
+```
+长度：len(tuple1)
+最大值：max(tuple1)
+最小值：min(tuple2)
+将列表转换为元组tuple(list)
+```
+
+## 字典
+```python
+dic={'name':'cwx','sex':'man'}
+```
+字典注意的几个要点：
+1. 键是唯一的，如果有重复，输出这个键的时候，只会输出这个相同键的最后一个值
+2. 键只能是不能变类型，不能是列表等其他可变的键
+
+修改字典得值：dic['name']='robin'
+删除字典的值：del dic['name']
+删除整个字典：dic.clear()
+
+字典的内置函数：
+1. len(dic)求字典的长度，即键的个数
+2. str(dic)输出字典
+
+
+##集合set
+创建一个集合set ```a=set('sdwed) /b=set(('robin','cwx','tiger'))```
+创建一个空集合只能使用set()创建，而不能使用{}，因为{}创建的是一个空字典
+
+集合的基本操作：
+1. 添加元素：add('a') add函数只能把里面的参数直接作为一个元素添加到集合中；但是update()函数，里面能放多个参数，并把每一个参数都添加到集合中。
+2. 删除元素：remove() 不存在会报错
+discard() 不存在不会报错
+3. 清空集合：clear()
+4. 长度：len()
+5. 拷贝集合：copy()
+6. 随机移除元素：pop()
+7. 返回两个集合的并集：union()
 
